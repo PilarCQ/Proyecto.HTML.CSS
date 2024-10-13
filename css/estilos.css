@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} /*Con esto eliminamos el formato por defecto*/
+header{/*Contenedor padre de logotipo a h1*/
+    width: 1000px;
+    margin: 0 auto;
+    background-color: aqua;
+    padding: 25px;
+    display: flex;
+}
+
+.logotipo{
+    width: 150px;
+    height: 150px;
+}
+h1{
+    margin-left: 20px;
+}
+/****NAV****/
+
+nav{/*Contenedor padre de lista de menú*/
+    width: 1000px;
+    margin: 0 auto;
+    background-color: green;
+    display: flex;
+    justify-content: space-around;
+    line-height: 50px;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+}
+nav ul a{
+    background-color: aqua;
+    padding: 5px 20px;
+    color: black;
+    text-decoration: none;
+
+}
+
+/******MAIN*****/
+
+main{/*Contenedor padre de lista de section y aside*/
+    display: flex;
+    width: 1000px;
+    margin: 0px auto;
+}
+main section{
+    background-color: beige;
+    width: 70%;
+    padding: 10px;
+}
+main aside{
+    background-color: darkkhaki;
+    width: 30%;
+    padding: 10px;
+}
+main aside ul{
+    list-style: none;
+}
+main section{/*Contenedor padre de lista de h2 dentro de section*/
+    display: flex;
+    
+}
+main section h2{
+    padding: 5px 20px;
+}
+/***FOOTER***/
+
+footer{
+    width: 1000px;
+    margin: 0 auto;
+    padding: 40px 60px;
+    background-color: aqua;
+}
+footer ul{/*Contenedor padre de lista de enlaces de footer*/
+    display: flex;
+    list-style: none;
+}
+footer ul a{
+    background-color: aqua;
+    padding: 5px 20px;
+    color: black;
+    text-decoration: none;
+
+}
+footer ul{
+    flex-wrap: wrap;
+}
+footer ul li a img{
+width: 50px;
+height: 50px;
+}
+
+/******GALERIA*****/
+
+main section{/*Contenedor padre de imagenes de la galeria*/
+    display: flex;
+    flex-wrap: wrap;
+}
+main section div img{/*con esto damos tamaño a las imagenes de la galeria*/
+    width: 70%;
+    height: 70%;
+    border: 1px solid black;
+    
+}
